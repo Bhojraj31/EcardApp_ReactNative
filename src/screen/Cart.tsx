@@ -158,7 +158,7 @@ const Cart = () => {
             style={{
               width: '30%',
               height: 35,
-              backgroundColor: 'orange',
+              backgroundColor: 'red',
               alignItems: 'center',
               justifyContent: 'center',
               borderRadius: 7,
