@@ -1,22 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React, { useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { StyleSheet } from 'react-native'
+import React from 'react'
 import AppNavigator from '../AppNavigator'
 import { addMyProduct } from '../redux/MyProductSlice'
-import { items } from '../redux/MyProductSlice'
 
 const Main = () => {
-    const dispatch = useDispatch();
-
-    useEffect(()=> {
-        items.map(item =>{
-            dispatch(addMyProduct)
-        });
-    },[]);
-
     return (
-    <AppNavigator/>
-  )
+        <AppNavigator />
+    )
 }
 
 export default Main
